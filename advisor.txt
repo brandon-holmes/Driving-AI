@@ -1,0 +1,59 @@
+Brandon Holmes, 500751878
+Nya Samahan, 500634913
+Rafael Natividadm, 500705909
+
+Result for an individual with inadequate savings:
+saved(7500).
+earnings(40000).
+cash(1000).
+dependents(1).
+-------------------------------------------------
+?- save(What).
+What = 1000
+Yes (0.00s cpu, solution 1, maybe more)
+(Output Message)
+You should save $1000
+
+?- invest(What).
+What = 1000
+Yes (0.00s cpu, solution 1, maybe more)
+(Output Message)
+You should invest $0
+__________________________________________________
+
+Result for an individual with both adequate savings and income:
+saved(75000).
+earnings(40000).
+cash(1000).
+dependents(1).
+-------------------------------------------------
+?- save(What).
+What = 1000
+Yes (0.00s cpu, solution 1, maybe more)
+(Output Message)
+You should save $500.0
+
+?- invest(What).
+What = 1000
+Yes (0.00s cpu, solution 1, maybe more)
+(Output Message)
+You should invest $500.0
+__________________________________________________
+
+Result for an individual with adequate savings and inadequate income:
+saved(10000).
+earnings(4000).
+cash(1000).
+dependents(1).
+-------------------------------------------------
+?- save(What).
+What = 1000
+Yes (0.02s cpu)
+(Output Message)
+You should save $200.0
+
+?- invest(What).
+What = 1000
+Yes (0.00s cpu)
+(Output Message)
+You should invest $800.0

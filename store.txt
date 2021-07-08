@@ -1,0 +1,183 @@
+﻿
+Brandon Holmes, 500751878
+Nya Samahan, 500634913
+Rafael Natividadm, 500705909
+
+Question 1 Results of “?- inStore(X, Y, Z), Z > 3.” :
+
+X = apl2
+Y = laptop
+Z = 5
+Yes (0.00s cpu, solution 1, maybe more)
+X = asu1
+Y = phone
+Z = 6
+Yes (0.00s cpu, solution 2, maybe more)
+X = asu2
+Y = laptop
+Z = 8
+Yes (0.00s cpu, solution 3, maybe more)
+X = ace2
+Y = laptop
+Z = 5
+Yes (0.00s cpu, solution 4, maybe more)
+X = hew2
+Y = laptop
+Z = 7
+Yes (0.00s cpu, solution 5, maybe more)
+X = hew4
+Y = printer
+Z = 10
+Yes (0.00s cpu, solution 6, maybe more)
+X = sam1
+Y = phone
+Z = 13
+Yes (0.00s cpu, solution 7, maybe more)
+No (0.00s cpu)
+
+2. Question 2 result of “?- manufacturer(X, acer, Y), Y > 2017, price(X, Z), Z < 500.
+
+X = ace2
+Y = 2018
+Z = 450
+Yes (0.00s cpu, solution 1, maybe more)
+No (0.20s cpu)
+
+3. Question 3, result of ?- manufacturer(X, asus, _), inStore(X, phone, _), price(X, Z), manufacturer(A, apple, _), inStore(A, phone, _), price(A, C), Z < C.
+
+X = asu1
+Z = 600
+A = apl1
+C = 900
+Yes (0.00s cpu, solution 1, maybe more)
+No (0.27s cpu)
+
+4. Question 4, result of “?- manufacturer(X, Y, _), manufacturer(I, J, _), X = I, Y \= J.”:
+No (0.00s cpu)
+
+5.Question 5, result of “?- manufacturer(X, apple, _), price(X, Y).”:
+X = apl1
+Y = 900
+Yes (0.00s cpu, solution 1, maybe more)
+X = apl2
+Y = 1200
+Yes (0.00s cpu, solution 2, maybe more)
+X = apl3
+Y = 999
+Yes (0.00s cpu, solution 3)
+
+6. Question 5, result of “?- manufacturer(X, Y, _), manufacturer(I, J, _), X \= I, Y = J.”:
+
+X = apl1
+Y = apple
+I = apl2
+J = apple
+Yes (0.00s cpu, solution 1, maybe more)
+X = apl1
+Y = apple
+I = apl3
+J = apple
+Yes (0.00s cpu, solution 2, maybe more)
+X = apl2
+Y = apple
+I = apl1
+J = apple
+Yes (0.00s cpu, solution 3, maybe more)
+X = apl2
+Y = apple
+I = apl3
+J = apple
+Yes (0.00s cpu, solution 4, maybe more)
+X = apl3
+Y = apple
+I = apl1
+J = apple
+Yes (0.02s cpu, solution 5, maybe more)
+X = apl3
+Y = apple
+I = apl2
+J = apple
+Yes (0.02s cpu, solution 6, maybe more)
+X = asu1
+Y = asus
+I = asu2
+J = asus
+Yes (0.02s cpu, solution 7, maybe more)
+X = asu2
+Y = asus
+I = asu1
+J = asus
+Yes (0.02s cpu, solution 8, maybe more)
+X = ace2
+Y = acer
+I = ace3
+J = acer
+Yes (0.02s cpu, solution 9, maybe more)
+X = ace3
+Y = acer
+I = ace2
+J = acer
+Yes (0.02s cpu, solution 10, maybe more)
+X = can4
+Y = canon
+I = can5
+J = canon
+Yes (0.02s cpu, solution 11, maybe more)
+X = can5
+Y = canon
+I = can4
+J = canon
+Yes (0.02s cpu, solution 12, maybe more)
+X = hew2
+Y = hp
+I = hew4
+J = hp
+Yes (0.02s cpu, solution 13, maybe more)
+X = hew4
+Y = hp
+I = hew2
+J = hp
+Yes (0.02s cpu, solution 14, maybe more)
+X = sam1
+Y = samsung
+I = sam4
+J = samsung
+Yes (0.02s cpu, solution 15, maybe more)
+X = sam4
+Y = samsung
+I = sam1
+J = samsung
+Yes (0.03s cpu, solution 16, maybe more)
+No (0.03s cpu)
+
+7.Question 7, result of “?- price(ace2, X), price(can4, Y), I is X + Y.”:
+
+X = 450
+Y = 400
+I = 850
+Yes (0.00s cpu)
+
+8.Question 8 result of “?- inStore(X, printer, _), manufacturer(X, Y, _), Y \= hp, price(X, I), inStore(A, printer, _), manufacturer(A, B, _), B \= hp, price(A, J), X \= A, Y \= B, I = J.”:
+
+No (0.00s cpu)
+
+9.Question 9, result of “?- manufacturer(X, I, _), manufacturer(Y, I, _), manufacturer(Z, I, _), X \= Y, X \= Z, Y \= Z.”
+
+X = apl1
+I = apple
+Y = apl2
+Z = apl3
+Yes (0.00s cpu, solution 1, maybe more)
+
+10.Question 10, result of "inStore(ItemID, phone, Quantity), manufacturer(ItemID, asus, Year), price(ItemID, P1), \+ (inStore(ItemID2, phone, Quantity2), manufacturer(ItemID2, asus, Year2), price(ItemID2, P2), P2 < P1).":
+
+ItemID = asu6
+Quantity = 6
+Year = 2016
+P1 = 400
+ItemID2 = ItemID2
+Quantity2 = Quantity2
+Year2 = Year2
+P2 = P2
+Yes (0.00s cpu, solution 1, maybe more)
+No (0.14s cpu)

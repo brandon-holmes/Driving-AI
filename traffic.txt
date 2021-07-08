@@ -1,0 +1,35 @@
+Brandon Holmes, 500751878
+Nya Samahan, 500634913
+Rafael Natividadm, 500705909
+
+?- canDriveStraight(honda, 11, -26).
+Yes (0.00s cpu)
+?- canDriveStraight(ford, 21, 14).
+No (0.00s cpu)
+?- canDriveStraight(subaru, -3, 34).
+Yes (0.00s cpu)
+?- canDriveStraight(bmw, -22, -19).
+No (0.00s cpu)
+
+/*This function does not work completely, we were unable to test distances between cars*/
+?- canTurnRight(honda, 11, -26).
+Yes (0.00s cpu)
+?- canTurnRight(ford, 21, 14).
+Abort
+?- canTurnRight(subaru, -3, 34).
+Yes (0.00s cpu)
+?- canTurnRight(bmw, -22, -19).
+Abort
+
+/*This function does not work completely, we were unable to test distances between cars*/
+
+?- canTurnLeft(honda, 11, -26).
+Abort
+?- canTurnLeft(ford, 21, 14).
+No (0.00s cpu)
+?- canTurnLeft(subaru, -3, 34).
+Abort
+?- canTurnLeft(bmw, -22, -19).
+No (0.00s cpu)
+
+
